@@ -1,0 +1,13 @@
+NAMESPACE 
+importFrom("MassSpecWavelet"£¬"GA"£¬"Matrix") 
+ 
+export( 
+        "cwt", 
+        "airPLS", 
+        "fitness", 
+        "peakdetection", 
+        "widthEstimationCWT", 
+        "RWPD", 
+	"peakdetection", 
+	"WhittakerSmooth" 
+        ) 
