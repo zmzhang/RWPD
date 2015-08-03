@@ -1,5 +1,5 @@
 NAMESPACE 
-importFrom("MassSpecWavelet"£¬"GA"£¬"Matrix") 
+importFrom("MassSpecWavelet","GA","Matrix") 
  
 export( 
         "cwt", 
@@ -8,6 +8,5 @@ export(
         "peakdetection", 
         "widthEstimationCWT", 
         "RWPD", 
-	"peakdetection", 
-	"WhittakerSmooth" 
+		"WhittakerSmooth" 
         ) 
