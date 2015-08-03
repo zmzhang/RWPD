@@ -27,7 +27,7 @@ airPLS(x,y,lambda=10,differences=1, itermax=20)
 
 \keyword{airPLS}
 
-\example
+\examples{
 	main="Simulated data"
 	xlab = expression("Wavenumber / cm"^-1)
 	ylab="Raman Intensity/Arbitr. Units"
@@ -66,3 +66,4 @@ airPLS(x,y,lambda=10,differences=1, itermax=20)
 	}
 	yr <- y-z;
 	lines(x,yr)
+}

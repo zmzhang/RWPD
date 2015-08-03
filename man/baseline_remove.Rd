@@ -22,7 +22,7 @@ baseline_remove(x,y)
 
 \keyword{baseline_remove}
 
-\example
+\examples{
 	main="Simulated data"
 	xlab = expression("Wavenumber / cm"^-1)
 	ylab="Raman Intensity/Arbitr. Units"
@@ -46,3 +46,4 @@ baseline_remove(x,y)
 	bkg <- lm.sol$coef[-1]*x + lm.sol$coef[1]
 	yr <- y - bkg;
 	lines(x,yr,col='red')
+}

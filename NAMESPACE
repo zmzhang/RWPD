@@ -1,12 +1,8 @@
-NAMESPACE 
-importFrom("MassSpecWavelet","GA","Matrix") 
- 
+importFrom("Matrix", spMatrix, diff, t, solve)
+importFrom("MassSpecWavelet",getLocalMaximumCWT, getRidge, identifyMajorPeaks)
+importFrom("GA",ga)
+
 export( 
-        "cwt", 
-        "airPLS", 
-        "fitness", 
-        "peakdetection", 
-        "widthEstimationCWT", 
-        "RWPD", 
-		"WhittakerSmooth" 
+        "airPLS",
+		"RWPD"
         ) 

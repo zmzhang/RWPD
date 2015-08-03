@@ -13,7 +13,7 @@ startend(x,y,width,startpoints,endpoints)
   \item{x}{The values of x-axis}
   \item{y}{The values of y-axis}
   \item{width}{estimate the peak width using the CWT with Haar wavelet}
-  \item{startpoints}
+  \item{startpoints}{The startingpoints and endpoints mean the starting point and the end point of the selected segment.}
   \item{endpoints}{The startingpoints and endpoints mean the starting point and the end point of the selected segment.}
 }
 

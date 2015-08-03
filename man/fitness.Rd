@@ -8,6 +8,7 @@
 \usage{
 	fitness <- -fitlorentzian(lambda,x,y)
 %- maybe also 'usage' for other objects documented here.
+}
 \arguments{
   \item{x}{The values of x-axis}
   \item{y}{The values of y-axis}

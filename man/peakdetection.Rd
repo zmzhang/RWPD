@@ -24,7 +24,7 @@ peakdetection(x,y)
 
 \keyword{peakdetection}
 
-\example
+\examples{
 	y=c(dnorm(seq(-5,5,by=0.1),sd=0.4),dnorm(seq(-5,5,by=0.1),sd=0.7),
 		dnorm(seq(-5,5,by=0.1),sd=0.2),dnorm(seq(-5,5,by=0.1),sd=0.3),
 		dnorm(seq(-5,5,by=0.1),sd=0.5));
@@ -42,3 +42,4 @@ peakdetection(x,y)
 	peakIndex <- majorPeakInfo$peakIndex
 	position <- matrix(x[peakIndex])
 	points(x[peakIndex],y[peakIndex],pch=15)
+}

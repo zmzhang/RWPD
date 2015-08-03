@@ -10,9 +10,9 @@ peakrange(position,width,pos,wid)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{position}
+  \item{position}{The position and width are the estimated results from peakdetection and widthEstimation or the results from GAs. }
   \item{width}{The position and width are the estimated results from peakdetection and widthEstimation or the results from GAs. }
-  \item{pos}
+  \item{pos}{The pos and wid are the coefficients of position and width, and both of them are between 0 and 1.}
   \item{wid}{The pos and wid are the coefficients of position and width, and both of them are between 0 and 1.}
 
 }

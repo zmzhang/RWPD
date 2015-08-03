@@ -26,7 +26,7 @@ RWPD(x,yr,yf,width,position)
 \seealso{\code{\link{peakdetectionresidual}}}
 
 \keyword{RWPD}
-\example
+\examples{
 
 	residual <- yr-colSums(yf);
 	positionresidual <- peakdetectionresidual(xa,residual)$position;
@@ -47,3 +47,4 @@ RWPD(x,yr,yf,width,position)
 	position <- matrix(position);
 	width <- matrix(c(sum(width)/length(position)),nrow=length(position));
 
+}
