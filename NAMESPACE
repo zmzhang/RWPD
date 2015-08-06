@@ -3,7 +3,7 @@ importFrom("MassSpecWavelet",getLocalMaximumCWT, getRidge, identifyMajorPeaks)
 importFrom("GA",ga)
 
 export( 
-		"area",
+		"areayf",
 		"airPLS",
 		"baseline_remove",
 		"cwt",
@@ -11,7 +11,7 @@ export(
         "extendNBase",
 		"fiterror",
 		"fitness",
-		"integration",
+		"trapezoidal.integration",
 		"peakdetection",
 		"peakdetectionresidual",
 		"peakheights",
