@@ -24,7 +24,7 @@ peakdetectionresidual(x,y)
 
 \keyword{peakdetectionresidual}
 
-\example{
+\examples{
 	data(simulatedxa)
 	data(simulatedyf)
 	data(simulatedyr)

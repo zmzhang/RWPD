@@ -26,7 +26,7 @@ areayf(fitresults,x,peakheight)
 
 \keyword{areayf}
 
-\example{
+\examples{
 	y=c(dnorm(seq(-5,5,by=0.1),sd=0.2))
 	x=1:length(y)
 	peakheight=c(2)

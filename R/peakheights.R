@@ -1,4 +1,4 @@
-PEAKHEIGHTS <- function(positionwidth,x,y,peakshape){
+peakheights <- function(positionwidth,x,y,peakshape){
 	# If the function is Gaussian function, the fitness should be defined as follows.
 	# The positionwidth is the results of the estimation or GAs for position or width.
 	NumPeaks <- length(positionwidth)/2;

@@ -1,4 +1,3 @@
-library(MassSpecWavelet)
 peakdetection <- function(x,y){
 	scales <- seq(1,60,1)
 	wCoefs <- cwt(y, scales=scales, wavelet='mexh')

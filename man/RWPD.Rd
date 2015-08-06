@@ -26,7 +26,7 @@ RWPD(x,yr,yf,width,position)
 \seealso{\code{\link{peakdetectionresidual}}}
 
 \keyword{RWPD}
-\examples
+\examples{
 
 	data(simulatedxa)
 	data(simulatedyr)
@@ -53,3 +53,4 @@ RWPD(x,yr,yf,width,position)
 	position <- matrix(allposition)[-which(diff(allposition)<10),];
 	position <- matrix(position);
 	width <- matrix(c(sum(width)/length(position)),nrow=length(position));
+}

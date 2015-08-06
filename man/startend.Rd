@@ -27,6 +27,8 @@ startend(x,y,width,startpoints,endpoints)
 
 \keyword{startend}
 
+
+\examples{
 	y=c(dnorm(seq(-5,5,by=0.1),sd=0.4),dnorm(seq(-5,5,by=0.1),sd=0.7),
 		dnorm(seq(-5,5,by=0.1),sd=0.2),dnorm(seq(-5,5,by=0.1),sd=0.3),
 		dnorm(seq(-5,5,by=0.1),sd=0.5));
