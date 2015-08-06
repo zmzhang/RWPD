@@ -21,4 +21,3 @@ trapezoidal.integration(x,yf)
 \author{Zhimin Zhang, Xia Tong}
 
 \keyword{integration}
-

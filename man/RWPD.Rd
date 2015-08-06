@@ -26,19 +26,26 @@ RWPD(x,yr,yf,width,position)
 \seealso{\code{\link{peakdetectionresidual}}}
 
 \keyword{RWPD}
-\examples{
+\examples
 
+	data(simulatedxa)
+	data(simulatedyr)
+	data(simulatedyf)
+	data(simulatedposition)
+	data(simulatedwidth)
+	plot(xa,yr,type='l',cex.axis=1.2,cex.lab=1.2,main='Simulated data', 
+		xlab='Data points',ylab='Height')
 	residual <- yr-colSums(yf);
 	positionresidual <- peakdetectionresidual(xa,residual)$position;
 	p <- matrix(which(xa %in% positionresidual));
 	ymax <- matrix(0,nrow(p),ncol(p));
 	for (i in 1:length(p)) {
-    		lowerbound <- xa[p[i]-5];
-    		upperbound <- xa[p[i]+5];
+     		lowerbound <- xa[p[i]-5];
+     		upperbound <- xa[p[i]+5];
 		xrange <- which(xa >= lowerbound & xa <= upperbound);
 		ymax[i] <- max(yr[xrange]);
-	pos <- which(yr %in% ymax);
-	positionresidualmax <- matrix(xa[pos]);
+		pos <- which(yr %in% ymax);
+		positionresidualmax <- matrix(xa[pos]);
 	}
 	posr <- which(abs(positionresidual-positionresidualmax)<10);
 	positionr <- matrix(positionresidual[posr]);
@@ -46,5 +53,3 @@ RWPD(x,yr,yf,width,position)
 	position <- matrix(allposition)[-which(diff(allposition)<10),];
 	position <- matrix(position);
 	width <- matrix(c(sum(width)/length(position)),nrow=length(position));
-
-}

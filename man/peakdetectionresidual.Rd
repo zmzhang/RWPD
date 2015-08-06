@@ -23,3 +23,22 @@ peakdetectionresidual(x,y)
 \seealso{\code{\link{cwt}}}
 
 \keyword{peakdetectionresidual}
+
+\example{
+	data(simulatedxa)
+	data(simulatedyf)
+	data(simulatedyr)
+	residual <- yr-colSums(yf);
+	scales <- seq(1,8,1)
+	wCoefs <- cwt(residual, scales=scales, wavelet='mexh')
+	localMax <- getLocalMaximumCWT(wCoefs)
+	ridgeList <- getRidge(localMax)
+	SNR.Th <- 1.5;
+	majorPeakInfo <- identifyMajorPeaks(residual, ridgeList, wCoefs, 
+		SNR.Th=SNR.Th, ridgeLength =4)
+	peakIndex <- majorPeakInfo$peakIndex
+	position <- matrix(xa[peakIndex])
+	plot(xa,residual,type='l')
+	points(xa[peakIndex],residual[peakIndex],pch=15)
+
+}

@@ -21,9 +21,9 @@
 
 \author{Zhimin Zhang, Xia Tong}
 
-\seealso{\code{\link{fitlorentzian, peakshape}}}
+\seealso{\code{\link{fitlorentzian}}}
 
-\keyword{fitness }
+\keyword{fitness}
 
 
 

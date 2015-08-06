@@ -1,5 +1,5 @@
+library(MassSpecWavelet)
 peakdetection <- function(x,y){
-	# library(MassSpecWavelet)
 	scales <- seq(1,60,1)
 	wCoefs <- cwt(y, scales=scales, wavelet='mexh')
 	localMax <- getLocalMaximumCWT(wCoefs)
