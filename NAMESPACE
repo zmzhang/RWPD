@@ -14,7 +14,7 @@ export(
 		"integration",
 		"peakdetection",
 		"peakdetectionresidual",
-		"peakheight",
+		"peakheights",
 		"peakrange",
 		"plotwidthEstimation",
 		"positionwidth",
