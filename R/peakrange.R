@@ -14,5 +14,3 @@ peakrange <- function(position,width,pos,wid){
 	output <- list(ub=ub,lb=lb)
 	return(output)
 }
-
-
