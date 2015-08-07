@@ -30,4 +30,3 @@ trapezoidal.integration <- function(x,yf){
 	# print the definite integral
 	return(integral)
 }
-
