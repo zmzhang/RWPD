@@ -6,7 +6,7 @@
 detect the peak position using the CWT with Mexican Hat wavelet
 }
 \usage{
-peakdetection(x,y)
+peakdetection(x,y,sca)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
