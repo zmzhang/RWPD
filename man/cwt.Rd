@@ -23,15 +23,16 @@ The return is the 2-D CWT coefficient matrix, with column names as the scale. Ea
 \author{Pan Du, Simon Lin}
 
 \examples{
-	data(exampleMS)
-	scales <- seq(1, 64, 3)
-	wCoefs <- cwt(exampleMS[5000:11000], scales=scales, wavelet='mexh')
-
-	## Plot the 2-D CWT coefficients as image (It may take a while!)
-	xTickInterval <- 1000
-	image(5000:11000, scales, wCoefs, col=terrain.colors(256), axes=FALSE, xlab='m/z index', ylab='CWT coefficient scale', main='CWT coefficients')
-	axis(1, at=seq(5000, 11000, by=xTickInterval))
-	axis(2, at=c(1, seq(10, 64, by=10)))
+	main="Simulated data"
+	xlab = expression("Wavenumber / cm"^-1)
+	ylab="Raman Intensity/Arbitr. Units"
+	y=c(40*dnorm(seq(-5,5,by=0.1),sd=0.2),60*dnorm(seq(-5,5,by=0.1),sd=0.5),30*dnorm(seq(-5,5,by=0.1),sd=0.7),100*rep(0.001,100))
+	x=1:length(y)
+	plot(x,y,type='l', main="pure signal",xlab=xlab,ylab=ylab)
+	y=y+40*rnorm(length(x))*0.01
+	scales <- seq(1, 20, 1)
+	wCoefs <- cwt(y, scales=scales, wavelet='mexh')
+	image(x, scales, wCoefs, col=terrain.colors(256), axes=FALSE, xlab='m/z index', ylab='CWT coefficient scale', main='CWT coefficients')
 	box()
 }
 \keyword{ methods }
