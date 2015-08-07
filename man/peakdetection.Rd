@@ -31,7 +31,7 @@ peakdetection(x,y)
 	y=y+8*rnorm(length(y))*0.001;
 	x=1:length(y);
 	plot(x,y,type='l', cex.axis=1,cex.lab=1.1,main='Simulated data', xlab='Data points',ylab='Height')
-
+	library(MassSpecWavelet)
 	scales <- seq(1,16,1)
 	wCoefs <- cwt(y, scales=scales, wavelet='mexh')
 	localMax <- getLocalMaximumCWT(wCoefs)

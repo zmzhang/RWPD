@@ -28,6 +28,7 @@ peakdetectionresidual(x,y)
 	data(simulatedxa)
 	data(simulatedyf)
 	data(simulatedyr)
+	library(MassSpecWavelet)
 	residual <- yr-colSums(yf);
 	scales <- seq(1,8,1)
 	wCoefs <- cwt(residual, scales=scales, wavelet='mexh')
