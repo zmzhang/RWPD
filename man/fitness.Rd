@@ -6,13 +6,14 @@
 	the optimized function by GA
 }
 \usage{
-	fitness <- -fitlorentzian(lambda,x,y)
+	fitness <- -fitshape(lambda,x,y,shape)
 %- maybe also 'usage' for other objects documented here.
 }
 \arguments{
+  \item{lambda}{lambda is a row matrix including peak position and width in above step.}
   \item{x}{The values of x-axis}
   \item{y}{The values of y-axis}
-  \item{lambda}{lambda is a row matrix including peak position and width in above step.}
+  \item{shape}{The shape of peak}
 }
 
 \value{
@@ -21,7 +22,7 @@
 
 \author{Zhimin Zhang, Xia Tong}
 
-\seealso{\code{\link{fitlorentzian}}}
+\seealso{\code{\link{fitshape}}}
 
 \keyword{fitness}
 
