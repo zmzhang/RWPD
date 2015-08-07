@@ -36,13 +36,10 @@ areayf(fitresults,x,peakheight)
 	g <- matrix(0,NumPeaks,length(x))
 	yf <- matrix(0,NumPeaks,length(x))
 	area <- matrix(0,1,NumPeaks)
-	peakshape <- function(x,position,width){
-		exp(-((x-position)/(0.6005612*width))^2);
-		# Gaussian function
-	}
 	for(m in 1:NumPeaks){
-		g[m,] <- peakshape(x,fitresults[2*m-1],fitresults[2*m]);
+		g[m,] <- peakshape(x,fitresults[2*m-1],fitresults[2*m],1);
 		yf[m,] <- g[m,]*peakheight[m];
 		area[m] <- trapezoidal.integration(x,yf[m,]);
+		lines(x,yf[m,],col='red')
 	}
 }

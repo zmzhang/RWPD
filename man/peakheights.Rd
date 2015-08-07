@@ -1,12 +1,12 @@
-\name{PEAKHEIGHTS}
-\alias{PEAKHEIGHTS}
+\name{peakheights}
+\alias{peakheights}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{estimate the peak height by Gaussian fitting}
 \description{
 	estimate the peak height by Gaussian fitting
 }
 \usage{
-PEAKHEIGHTS(positionwidth,x,y)
+peakheights(positionwidth,x,y)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -23,4 +23,4 @@ PEAKHEIGHTS(positionwidth,x,y)
 
 \seealso{\code{\link{peakshape}}}
 
-\keyword{PEAKHEIGHTS}
+\keyword{peakheights}

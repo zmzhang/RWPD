@@ -40,5 +40,4 @@ peakdetectionresidual(x,y)
 	position <- matrix(xa[peakIndex])
 	plot(xa,residual,type='l')
 	points(xa[peakIndex],residual[peakIndex],pch=15)
-
 }
