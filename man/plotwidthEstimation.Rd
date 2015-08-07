@@ -32,8 +32,8 @@ Whether the drawing is successful or not.
 	x=1:length(y);
 	plot(x,y,type='l',ylim=c(-2,2), cex.axis=1,cex.lab=1.1,main='Simulated data', xlab='Data points',ylab='Height')
 	
-	position <- peakdetection(x,y)$position;
-	majorPeakInfo <- peakdetection(x,y)$majorPeakInfo;
+	position <- peakdetection(x,y,16)$position;
+	majorPeakInfo <- peakdetection(x,y,16)$majorPeakInfo;
 	peakWidth <- widthEstimationCWT(y,majorPeakInfo)
 	widthpoints <- plotwidthEstimation(x,y,peakWidth)
 
