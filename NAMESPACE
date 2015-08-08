@@ -16,6 +16,7 @@ export(
 		"peakdetectionresidual",
 		"peakheights",
 		"peakrange",
+		"peakshape",
 		"plotwidthEstimation",
 		"positionwidth",
 		"RWPD",
