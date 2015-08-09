@@ -6,11 +6,12 @@
   Plot the the estimation of peak returned by \code{\link{widthEstimationCWT}}
 }
 \usage{
-plotwidthEstimation(x,peakWidth)
+plotwidthEstimation(x,y,peakWidth)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{the values of x-axis}
+  \item{y}{the values of y-axis}
   \item{peakWidth}{ returned by \code{\link{widthEstimationCWT}} }
 }
 
@@ -45,6 +46,7 @@ Whether the drawing is successful or not.
 	x1= (peakIndex[1]-peakScale.1.3):(peakIndex[1]+peakScale.1.3)
 	y1=  wCoefs_haar[x1,peakScale[1]]
 	y1a=  wCoefs_haar[,peakScale[1]]
+	plot(x,y,type='l',ylim=c(-2,2), cex.axis=1,cex.lab=1.1,main='Simulated data', xlab='Data points',ylab='Height')
 	lines(x1,y1-1,lwd=c(1.5))
 	peakWidth.1 = peakWidth[[paste(peakIndex[1])]]
 	LR1=c(peakWidth.1[c(1,length(peakWidth.1))])

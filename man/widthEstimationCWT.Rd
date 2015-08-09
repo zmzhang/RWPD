@@ -39,6 +39,6 @@ widthEstimationCWT(x,majorPeakInfo)
 	majorPeakInfo=identifyMajorPeaks(x, ridgeList, wCoefs,SNR.Th=3,ridgeLength=5)
 	peakWidth=widthEstimationCWT(x,majorPeakInfo)  
 	plot(xc,type='l', main="pure signal with curved background and random noise",xlab=expression("Wavenumber / cm"^-1),ylab="Intensity")
-	plotwidthEstimation(x,peakWidth)   
+	plotwidthEstimation(b,x,peakWidth)   
 }
 \keyword{widthEstimationCWT}
