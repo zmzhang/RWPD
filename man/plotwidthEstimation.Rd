@@ -29,7 +29,7 @@ Whether the drawing is successful or not.
 	y=c(dnorm(seq(-5,5,by=0.1),sd=0.4),dnorm(seq(-5,5,by=0.1),sd=0.7),
 		dnorm(seq(-5,5,by=0.1),sd=0.2),dnorm(seq(-5,5,by=0.1),sd=0.3),
 		dnorm(seq(-5,5,by=0.1),sd=0.5));
-	y=y+8*rnorm(length(y))*0.001;
+	y=y+rnorm(length(y))*0.001;
 	x=1:length(y);
 	plot(x,y,type='l',ylim=c(-2,2), cex.axis=1,cex.lab=1.1,main='Simulated data', xlab='Data points',ylab='Height')
 	
