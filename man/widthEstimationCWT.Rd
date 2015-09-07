@@ -31,6 +31,7 @@ widthEstimationCWT(x,majorPeakInfo)
 	xc=x+yc
 	x=xc  
 	scales <-seq(1, 30, 1)
+	library(MassSpecWavelet)
 	wCoefs <- cwt(x, scales=scales, wavelet='mexh')
 	image(1:nrow(wCoefs), scales, wCoefs, col=terrain.colors(256), axes=FALSE, xlab='index', ylab='CWT coefficient scale', main='CWT coefficients')
 	box()
