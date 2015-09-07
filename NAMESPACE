@@ -1,5 +1,5 @@
 importFrom("Matrix", spMatrix, diff, t, solve)
-importFrom("MassSpecWavelet", cwt, getLocalMaximumCWT, getRidge, identifyMajorPeaks)
+importFrom("MassSpecWavelet", getLocalMaximumCWT, getRidge, identifyMajorPeaks)
 importFrom("GA",ga)
 
 export( 
