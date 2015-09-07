@@ -37,14 +37,14 @@ RWPD(x,yr,yf,width,position)
 		xlab='Data points',ylab='Height')
 	residual <- yr-colSums(yf);
 	positionresidual <- peakdetectionresidual(xa,residual)$position;
-	p <- matrix(which(xa %in% positionresidual));
+	p <- matrix(which(xa \%in\% positionresidual));
 	ymax <- matrix(0,nrow(p),ncol(p));
 	for (i in 1:length(p)) {
      		lowerbound <- xa[p[i]-5];
      		upperbound <- xa[p[i]+5];
 		xrange <- which(xa >= lowerbound & xa <= upperbound);
 		ymax[i] <- max(yr[xrange]);
-		pos <- which(yr %in% ymax);
+		pos <- which(yr \%in\% ymax);
 		positionresidualmax <- matrix(xa[pos]);
 	}
 	posr <- which(abs(positionresidual-positionresidualmax)<10);
