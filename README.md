@@ -20,4 +20,4 @@ This is a correction example:
 ![This is a correction example:](https://github.com/zmzhang/RWPD/raw/master/image.tif)
 
 #Contact
-For any questions, please contact: Zhi-Min Zhang: zhangzhimin.csu@gmail.com or Xia Tong:.
+For any questions, please contact: Zhi-Min Zhang: zmzhang@csu.edu.cn or Xia Tong:.
