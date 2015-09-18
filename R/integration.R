@@ -1,4 +1,4 @@
-trapezoidal.integration <- function(x,yf){
+integration <- function(x,yf){
 	# The yf is a collection of each fitting peaks by calling the area function.
 	### 3 checks to ensure that the arguments are numeric and of equal lengths
 	# check if the variable of integration is numeric
