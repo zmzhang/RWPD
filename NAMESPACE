@@ -3,9 +3,9 @@ importFrom("MassSpecWavelet", getLocalMaximumCWT, getRidge, identifyMajorPeaks,l
 importFrom("GA",ga)
 
 export( 
-		"areayf",
+		"peakarea",
 		"airPLS",
-		"baseline_remove",
+		"polynomial fitting",
 		"cwt",
 		"extendLength",
         "extendNBase",
