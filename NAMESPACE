@@ -11,7 +11,7 @@ export(
         "extendNBase",
 		"fiterror",
 		"fitness",
-		"trapezoidal.integration",
+		"integration",
 		"peakdetection",
 		"peakdetectionresidual",
 		"peakheights",
