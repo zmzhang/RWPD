@@ -1,4 +1,4 @@
-startend <- function(x,y,sca,width,startpoints,endpoints){
+startend <- function(x,y,sca ,width,startpoints,endpoints){
 	# The startingpoints and endpoints mean the starting point and the end point of the selected segment.
 	# The width is the width in 
 	posi <- peakdetection(x,y,sca)$peakIndex;
