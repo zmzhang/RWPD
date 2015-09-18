@@ -1,5 +1,5 @@
 peakdetection <- function(x,y,sca){
-	scales <- seq(1,sca,1)
+	scales <- seq(1,sca, 1)
 	wCoefs <- cwt(y, scales=scales, wavelet='mexh')
 	localMax <- getLocalMaximumCWT(wCoefs)
 	ridgeList <- getRidge(localMax)
