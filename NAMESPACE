@@ -11,6 +11,7 @@ export(
         "extendNBase",
 		"fiterror",
 		"fitness",
+		"fitshape"
 		"integration",
 		"peakdetection",
 		"peakdetectionresidual",
