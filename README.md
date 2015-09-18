@@ -14,10 +14,10 @@ Install the downloaded packages from local zip or tar.gz file.
 
 To start running this algorithm, load the RWPD package through "library(RWPD)" in the R commandline windows, try "??RWPD" in the R commandline windows to open the documents.
 
-#Correction example
-This is a correction example:
+#Detection and Deconvolution example
+This is a detection and deconvolution example:
 
-![This is a correction example:](https://github.com/zmzhang/RWPD/blob/master/images.jpg)
+![This is a detection and deconvolution example:](https://github.com/zmzhang/RWPD/blob/master/images.jpg)
 
 #Contact
 For any questions, please contact: Zhi-Min Zhang: zmzhang@csu.edu.cn or Xia Tong: 142311060@csu.edu.cn.
