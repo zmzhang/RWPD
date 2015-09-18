@@ -10,7 +10,7 @@ export(
 		"extendLength",
         "extendNBase",
 		"fiterror",
-		"fitness",
+		"fitnessfunction",
 		"fitshape",
 		"integration",
 		"peakdetection",
