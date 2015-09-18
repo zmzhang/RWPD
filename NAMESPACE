@@ -5,7 +5,7 @@ importFrom("GA",ga)
 export( 
 		"peakarea",
 		"airPLS",
-		"polynomial fitting",
+		"polynomialfitting",
 		"cwt",
 		"extendLength",
         "extendNBase",
