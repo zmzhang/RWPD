@@ -1,4 +1,4 @@
-areayf <- function(fitresults,x,peakheight,shape){
+peakarea <- function(fitresults,x,peakheight,shape){
 	# If the function is lorentzian function, the fitness should be defined as follows.
 	# The fitresults are the fitting results of GA.
 	# The peakheight is the results of the PEAKHEIGHTS function.

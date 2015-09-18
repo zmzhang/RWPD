@@ -1,4 +1,4 @@
-baseline_remove <- function(x,y){
+polynomial fitting <- function(x,y){
 	lx <- length(x)
 	bkgsize <- round(length(y)/10)
 	x1 <- x[1:round(lx/bkgsize)]
