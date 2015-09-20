@@ -1,12 +1,12 @@
-\name{trapezoidal.integration}
-\alias{trapezoidal.integration}
+\name{integration}
+\alias{integration}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{To compute the peak area under the each fitting peaks by trapezoidal integration.}
 \description{
  To compute the peak area under the each fitting peaks by trapezoidal integration.
 }
 \usage{
-trapezoidal.integration(x,yf)
+integration(x,yf)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

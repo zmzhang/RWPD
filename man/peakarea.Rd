@@ -6,13 +6,13 @@
  To compute the peak shape and area of each fitting peaks.
 }
 \usage{
-areayf(fitresults,x,peakheight)
+peakarea(fitresults,x,peakheight)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{fitresults}{The fitresults are the fitting results of GA. }
   \item{x}{The values of x-axis}
-  \item{peakheight}{The peakheight is the results of the PEAKHEIGHTS function.}
+  \item{peakheight}{The peakheight is the results of the peakheights function.}
 }
 
 
@@ -22,9 +22,9 @@ areayf(fitresults,x,peakheight)
 
 \author{Zhimin Zhang, Xia Tong}
 
-\seealso{\code{\link{peakshape, PEAKHEIGHTS, integration}}}
+\seealso{\code{\link{peakshape, peakheights, integration}}}
 
-\keyword{areayf}
+\keyword{peakarea}
 
 \examples{
 	y=c(dnorm(seq(-5,5,by=0.1),sd=0.2))
@@ -39,7 +39,7 @@ areayf(fitresults,x,peakheight)
 	for(m in 1:NumPeaks){
 		g[m,] <- peakshape(x,fitresults[2*m-1],fitresults[2*m],1);
 		yf[m,] <- g[m,]*peakheight[m];
-		area[m] <- trapezoidal.integration(x,yf[m,]);
+		area[m] <- integration(x,yf[m,]);
 		lines(x,yf[m,],col='red')
 	}
 }
