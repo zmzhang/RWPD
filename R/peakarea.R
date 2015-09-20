@@ -10,7 +10,7 @@ peakarea <- function(fitresults,x,peakheight,shape){
 	for(m in 1:NumPeaks){
 		g[m,] <- peakshape(x,fitresults[2*m-1],fitresults[2*m],1);
 		yf[m,] <- g[m,]*peakheight[m];
-		area[m] <- trapezoidal.integration(x,yf[m,]);
+		area[m] <- integration(x,yf[m,]);
 	}
 	output <- list(area=area,yf=yf)
 	return(output)
