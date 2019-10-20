@@ -6,7 +6,8 @@ A method of recursive wavelet peak detection and deconvolution (RWPD) for analyt
 
 ## Intall using devtools from github
 
-library(devtools); 
+library(devtools)
+
 install_github("zmzhang/RWPD")
 
 
